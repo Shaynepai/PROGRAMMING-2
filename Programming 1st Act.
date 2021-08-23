@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main ()
+{
+    int  g1,g2,g3,g4,g5,Add;
+
+
+    printf ("Able to Calculate 5 subjects of Students Grades \n\nPlease Input The Grades of each the Subject that you want to Calculate \n\n First Subj: ");
+
+    scanf(" %d", &g1);
+    printf("Second subj: ");
+    scanf(" %d", &g2);
+    printf("Third subj: ");
+    scanf(" %d", &g3);
+    printf("Fourth subj: ");
+    scanf(" %d", &g4);
+    printf("Fifth subj: ");
+    scanf(" %d", &g5);
+
+
+
+    Add = addNumbers(g1,g2,g3,g4,g5);
+    printf("Result: = %d", Add);
+    return 0;
+}
+
+    int addNumbers(a,b,c,d,e)
+{
+    int ress;
+    ress = (a+b+c+d+e) / 5 ;
+    return ress;
+}
